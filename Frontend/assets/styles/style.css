@@ -82,9 +82,6 @@ nav {
   cursor: pointer;
 }
 
-img:hover{
- drop-shadow: x-axis: 0, y-axis: 46; blur: 130
-}
 
 /** Footer  */
 .footer {
