@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans&family=Raleway:wght@300;500;700&display=swap"); /*Importacion del tipo de letra */
+
+/** Globales  */
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/** Nav  */
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 4rem;
+  background-color: white;
+  border-bottom: thin solid black;
+}
+
+.nav-items img,
+nav > img {
+  width: auto;
+  height: 100%;
+}
+
+nav {
+  width: 98%;
+  height: 100%;
+  padding: 0.2rem;
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  grid-template-rows: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.nav-items {
+  justify-self: end;
+  width: min(25rem, 90%);
+  height: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-items a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Footer  */
+.footer {
+  width: 100vw;
+  height: 11.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer article {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer section:nth-child(1) {
+  background-color: #749f82;
+}
+.footer section:nth-child(2) {
+  background-color: #3d8361;
+  color: white;
+}
+
+.footer section {
+  padding: 1rem 1rem 0 3rem;
+}
+
+.footer p {
+  width: min(30rem, 100%);
+}
+
+.footer img {
+  width: 6rem;
+  height: auto;
+}
