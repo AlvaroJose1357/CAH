@@ -5,7 +5,9 @@ export function Nav() {
       <section class="nav-items">
         <a href="#">Inicio</a>
         <a href="#"><img src="../assets/img/user.png" alt=""></a>
-        <a href="#"><img src="../assets/img/cart.png" alt=""></a>
+        <div class = "container-cart-icon">
+          <a href="../CarritoCompra/carritoCompra.html"><img src="../assets/img/cart.png" alt=""></a>
+        </div>
         <a href="#"><img src="../assets/img/menu.png" alt=""></a>
       </section>
   `;
