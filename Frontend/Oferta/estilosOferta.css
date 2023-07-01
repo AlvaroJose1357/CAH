@@ -1,0 +1,198 @@
+/** Registrar Oferta ---------------*/
+
+.oferta {
+  position: relative;
+  justify-self: center;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  height: 44rem;
+  margin-bottom: 5rem;
+}
+
+.registrar-oferta {
+  top: 11rem;
+}
+
+.oferta-img {
+  position: relative;
+  border-radius: 3px;
+  max-width: 32rem;
+  min-width: 5rem;
+}
+
+.oferta-img img {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.oferta-img::after {
+  position: absolute;
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-60%, -50%);
+  background-color: var(--c4);
+}
+
+.oferta-form-container {
+  position: relative;
+  top: 1rem;
+  left: -5rem;
+  min-width: 23rem;
+}
+
+.oferta-form::before {
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 50%;
+  background-color: var(--c1);
+  bottom: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.oferta-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  row-gap: 2rem;
+  background-color: white;
+  border: thin solid var(--c4);
+  border-radius: 3px;
+}
+
+.oferta-form div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.oferta-form div:nth-of-type(2) {
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.oferta-form h3 {
+  font-size: 0.7rem;
+}
+
+.oferta-form input[type="text"]:focus {
+  outline: 3px solid var(--c1);
+}
+
+.button,
+.oferta-form input {
+  height: 2.5rem;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #eadcdc;
+}
+.oferta-form input[type="submit"],
+.button {
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+.oferta-form input[type="submit"]:hover,
+.button:hover {
+  cursor: pointer;
+  background-color: var(--c1);
+}
+
+/**  Oferta registradas ---------------*/
+/* .main-oferta-registros{
+  pad
+} */
+
+.ofertas-registradas {
+  margin: 7.3rem auto 3rem auto;
+  width: 75vw;
+  height: min-content;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: 3px solid var(--c1);
+  border-radius: 3px;
+  background-color: white;
+}
+
+.ofertas-registradas::after {
+  position: absolute;
+  content: "";
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-40%, -30%);
+  background-color: var(--c4);
+  z-index: -1;
+}
+
+.title {
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+  background-color: var(--c1);
+}
+
+.registros {
+  width: 100%;
+  display: grid;
+  grid-auto-rows: 5rem;
+  padding: 0.8rem 2rem;
+}
+
+.registro {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: thin solid gray;
+}
+
+.registro img {
+  height: 100%;
+  width: auto;
+}
+
+.registro div {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.8rem;
+}
+
+/* Ventana modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgb(97, 106, 107, 0.8);
+}
+
+.modal div {
+  display: flex;
+  column-gap: 2rem;
+}
