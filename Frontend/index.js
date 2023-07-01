@@ -7,27 +7,19 @@ const d = document,
 // ** Eventos globales ------------------------------------------------------------------
 d.addEventListener("DOMContentLoaded", App);
 
-// ** Eventos oferta ---------------------------------------------------------------------
-// Evento para abrir la modificacion de una oferta
-const $botonModificar = d.querySelector(".boton-modificar-oferta"),
-  $botonEliminar = d.querySelector(".boton-eliminar-oferta");
-
-function openModificarOferta() {
-  open("./modificar-oferta.html", "_self");
-  console.log("hola");
-}
-
-$botonModificar.addEventListener("click", openModificarOferta);
-
-// Evento para abrir la ventana modal de confirmal eliminacion de una oferta
-
-$botonEliminar.addEventListener("click", () => {
-  $main.appendChild(Modal());
-  //Cancelar modal
-  const $modal = $main.lastElementChild,
-    $cancelarModal = d.querySelector(".cancelar-modal");
-  function elimiminarModal() {
-    $modal.remove();
+// ** Delegacion de eventos, click-----------------------------------------------------
+d.addEventListener("click", (e) => {
+  //  Eventos oferta ---------------------------------------------------------------------
+  //Para abrir modificar-oferta
+  if (e.target.matches(".boton-modificar-oferta")) {
+    open("./modificar-oferta.html", "_self");
   }
-  $cancelarModal.addEventListener("click", elimiminarModal);
+  //Para abrir modal de confirmacion eliminar oferta
+  if (e.target.matches(".boton-eliminar-oferta")) {
+    $main.appendChild(Modal());
+  }
+  //Para cerrar modal
+  if (e.target.matches(".modal .cancelar-modal")) {
+    d.querySelector(".modal").remove();
+  }
 });
