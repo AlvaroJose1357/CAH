@@ -58,14 +58,15 @@ productsList.addEventListener("click", (e) => {
 rowProduct.addEventListener("click", (e) => {
   if (e.target.classList.contains("cancel-icon")) {
     const product = e.target.parentElement.parentElement;
-    const title = product.querySelector("p.titulo-producto-carrito").textContent;
+    const title = product.querySelector(
+      "p.titulo-producto-carrito"
+    ).textContent;
 
     allProducts = allProducts.filter((product) => product.title !== title);
 
     showHTML();
   }
 });
-
 
 // Funcion para mostrar  HTML
 const showHTML = () => {
