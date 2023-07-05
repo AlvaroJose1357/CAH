@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="./estilosCondu.css" />
+    <title>Modificar Conductor</title>
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <main class="conductor ingresar-condu">
+      <section class="condu-img">
+        <img src="../assets/img/conductor.png" alt="conductor" />
+      </section>
+      <section class="condu-form-container">
+        <form action="" class="condu-form">
+          <div>
+            <h2>¡Regístrate!</h2>
+            <h3>Conductor</h3>
+          </div>
+          <input
+            type="text"
+            name="idConductor"
+            required
+            placeholder="N° Cédula"
+          />
+          <input type="text" name="nom1" required placeholder="Primer nombre" />
+          <input
+            type="text"
+            name="nom2"
+            required
+            placeholder="Segundo nombre"
+          />
+          <input
+            type="text"
+            name="ape1"
+            required
+            placeholder="Primer apellido"
+          />
+          <input
+            type="text"
+            name="ape2"
+            required
+            placeholder="Segundo apellido"
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Correo electrónico"
+          />
+          <input
+            type="password"
+            name="contrasena"
+            required
+            placeholder="Contraseña"
+          />
+          <input
+            type="text"
+            name="direccion"
+            required
+            placeholder="Dirección"
+          />
+          <input type="tel" name="telefono" required placeholder="Teléfono" />
+          <div>
+            <input type="submit" value="MODIFICAR" />
+            <button class="button">CANCELAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="../index.js" type="module"></script>
+  </body>
 </html>

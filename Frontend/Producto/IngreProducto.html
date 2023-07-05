@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="./estilosProducto.css" />
+    <title>Ingresar Producto</title>
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <main class="producto ingresar-product">
+      <section class="product-img">
+        <img src="../assets/img/producto.png" alt="producto" />
+      </section>
+      <section class="product-form-container">
+        <form action="" class="product-form">
+          <div>
+            <h2>¡Regístrate!</h2>
+            <h3>Producto</h3>
+          </div>
+          <input
+            type="text"
+            name="idProducto"
+            required
+            placeholder="ID  Producto"
+          />
+          <input
+            type="text"
+            name="nomProducto"
+            required
+            placeholder="Nombre producto"
+          />
+          <input
+            type="text"
+            name="descripcionProducto"
+            required
+            placeholder="Descripción"
+          />
+          <div>
+            <input type="submit" value="REGISTRAR" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="../index.js" type="module"></script>
+  </body>
 </html>
