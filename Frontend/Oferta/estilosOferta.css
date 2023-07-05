@@ -170,7 +170,6 @@
 .registros {
   width: 100%;
   display: grid;
-  grid-auto-rows: 5rem;
   padding: 0.8rem 2rem;
 }
 
@@ -178,20 +177,33 @@
   height: 100%;
   width: 100%;
   padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 0.3rem;
+  display: grid;
+  grid-template-columns: min(5rem, 15%) 85%;
+  grid-auto-rows: max(5rem, min-content);
+  column-gap: 0.5rem;
+  justify-items: center;
   align-items: center;
   border-bottom: thin solid gray;
 }
 
 .registro img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+.registro .datos {
+  width: 100%;
+  display: flex;
+  column-gap: 0.2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .registro div {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 0.8rem;
 }
 
