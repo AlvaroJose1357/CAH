@@ -1,5 +1,3 @@
-/** Registrar Oferta ---------------*/
-
 .producto {
   position: relative;
   justify-self: center;
@@ -110,10 +108,10 @@
   background-color: var(--c1);
 }
 
-/**  Oferta registradas ---------------*/
-/* .main-oferta-registros{
-  pad
-} */
+/*  productos registradas ---------------/
+  /* .main-productos-registros{
+    pad
+  } */
 
 .productos-registrados {
   margin: 7.3rem auto 3rem auto;
@@ -142,10 +140,28 @@
 }
 
 .title {
-  border-bottom: 1px solid black;
   width: 100%;
+  padding: 0.3rem 1rem;
+  display: grid;
+  grid-template-columns: auto 4rem;
+  grid-template-rows: 100%;
+  align-items: center;
+  border-bottom: 1px solid black;
   text-align: center;
   background-color: var(--c1);
+}
+
+.title h2 {
+  width: 100%;
+}
+
+.title svg {
+  transition: color 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.title svg:hover {
+  color: var(--c2);
+  transform: scale(0.8);
 }
 
 .registros {
@@ -166,7 +182,7 @@
 }
 
 .registro img {
-  height: 100%;
+  height: 70%;
   width: auto;
 }
 
