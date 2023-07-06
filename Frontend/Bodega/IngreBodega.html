@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingresar bodega</title>
+        <link rel="stylesheet" href="../assets/styles/normalize.css">
+        <link rel="stylesheet" href="../assets/styles/style.css">
+        <link rel="stylesheet" href="../Bodega/estilosBodega.css">
+    </head>
+    <body>
+        <header class="header"></header>
+        <main class="bodega ingresar-bodega">
+          <section class="bodega-img">
+            <img src="../assets/img/bodega.png" alt="bodega">
+          </section>
+          <section class="bodega-form-container">
+            <form action="" class="bodega-form">
+              <div>
+                <h2>¡Regístrate!</h2>
+                <h3>Bodega</h3>
+              </div>
+              <input type="text" name="idBodega" required placeholder="N° Cédula">
+              <input type="text" name="nom1" required placeholder="Primer nombre">
+              <input type="text" name="nom2" required placeholder="Segundo nombre">
+              <input type="text" name="ape1" required placeholder="Primer apellido">
+              <input type="text" name="ape2" required placeholder="Segundo apellido">
+              <input type="email" name="email" required placeholder="Email">
+              <input type="password" name="contrasena" required placeholder="Contraseña">
+              <input type="text" name="direccion" required placeholder="Direccion">
+              <input type="tel"name="telefono" required placeholder="Telefono">
+              <input type="text" name="tipoBodega" required placeholder="Tipo bodega">
+              <input type="number"name="capacidadBodega" required placeholder="Capacidad">
+              <div>
+                <input type="submit" value="REGISTRAR">
+              </div>
+            </form>
+          </section>
+        </main>
+        <footer class="footer">
+        </footer>
+        <script src="../index.js" type="module"></script>
+    </body>
 </html>

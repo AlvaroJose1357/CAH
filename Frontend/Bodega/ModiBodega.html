@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modificar bodega</title>
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../Bodega/estilosBodega.css">
 </head>
 <body>
+    <header class="header"></header>
+    <main class="bodega ingresar-bodega">
+      <section class="bodega-img">
+        <img src="../assets/img/bodega.png" alt="bodega">
+      </section>
+      <section class="bodega-form-container">
+        <form action="" class="bodega-form">
+          <div>
+            <h2>Bodega</h2>
+            <h3>Modificar</h3>
+          </div>
+          <input type="text" name="idBodega"  placeholder="N° Cédula">
+          <input type="text" name="nom1"  placeholder="Primer nombre">
+          <input type="text" name="nom2"  placeholder="Segundo nombre">
+          <input type="text" name="ape1"  placeholder="Primer apellido">
+          <input type="text" name="ape2"  placeholder="Segundo apellido">
+          <input type="email" name="email" placeholder="Email">
+          <input type="password" name="contrasena"  placeholder="Contraseña">
+          <input type="text" name="direccion"  placeholder="Direccion">
+          <input type="tel"name="telefono"  placeholder="Telefono">
+          <input type="text" name="tipoBodega"  placeholder="Tipo bodega">
+          <input type="number"name="capacidadBodega"  placeholder="Capacidad">
+          <div>
+            <input type="submit" value="MODIFICAR">
+            <button class="button">CANCELAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="../index.js" type="module"></script>
     
 </body>
 </html>
