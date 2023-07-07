@@ -23,6 +23,9 @@ Hacer uso de Git y GitHub, el siguiente contenido ayudara a entender estas dos h
 - Tener xamp y inicializar mysql
 - Crear la base de datos cah
 
-* Dentro de backend correr el comando python manage.py migrate
+* Pasarse a la carpeta Backend, para correr los comandos:
+* pip install django para instalar el framework
+* pip install mysqlclient para realizar la conexion respetiva con MySql
+* python manage.py migrate para realizar las migraciones respectivas 
 
 De esta manera su base de datos sera actualizada con las tabla correspondientes
