@@ -169,7 +169,6 @@
 
 .registros {
   width: 100%;
-  display: grid;
   padding: 0.8rem 2rem;
 }
 
@@ -179,9 +178,9 @@
   padding: 0 1rem;
   padding-bottom: 0.3rem;
   display: grid;
-  grid-template-columns: min(5rem, 15%) 85%;
+  grid-template-columns: min(5rem, 15%) 1fr;
   grid-auto-rows: max(5rem, min-content);
-  column-gap: 0.5rem;
+  column-gap: 0.7rem;
   justify-items: center;
   align-items: center;
   border-bottom: thin solid gray;
