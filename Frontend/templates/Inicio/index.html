@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/incio-style.css' %}">
+<title>Inicio</title>
+{% endblock %}
+
+<!-- Body -->
+{% block content %}
+<main>
+  <article class="container">
+    <section>
+      <img src="{% static 'img/Inicio.png' %}" alt="">
+      <span class="descripcion">
+        <h1>BIENVENIDOS A CECLOVI</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, corrupti. quo libero placeat nemo,
+          quasi repellendus aperiam
+          nihil dignissimos.</p>
+      </span>
+    </section>
+    <section>
+      <div class="flip-card">
+        <div class="flip-face flip-front">
+          <h1>MISION</h1>
+        </div>
+        <div class="flip-face flip-back">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus aspernatur explicabo ad, neque
+            non provident numquam iusto recusandae tempore </p>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-face flip-front">
+          <h1>VISION</h1>
+        </div>
+        <div class="flip-face flip-back">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus aspernatur explicabo ad, neque
+            non provident numquam iusto recusandae tempore </p>
+        </div>
+      </div>
+    </section>
+  </article>
+  {% endblock %}
+  <!-- Fin body -->

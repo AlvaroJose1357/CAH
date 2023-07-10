@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/estilosVehiculo.css' %}">
+<title>Vehiculo</title>
+{% endblock %}
+
+<!-- Inicio body -->
+
+{% block content %}
+<main class="vehiculo registrar-vehiculo">
+  <section class="vehiculo-img">
+    <img src="{% static 'img/vehiculo.png' %}" alt="vehiculo">
+  </section>
+  <section class="vehiculo-form-container">
+    <form action="" class="vehiculo-form">
+      <div>
+        <h2>Registrar</h2>
+        <h3>vehiculo</h3>
+      </div>
+      <input type="text" placeholder="Placa">
+      <input type="text" placeholder="Capacidad">
+      <input type="text" placeholder="Documentos">
+      <input type="text" placeholder="Tipo De Vehiculo">
+      <div>
+        <input class="button" type="submit" value="REGISTRAR">
+        <button class="button">CANCELAR</button>
+      </div>
+    </form>
+  </section>
+  {% endblock %}
