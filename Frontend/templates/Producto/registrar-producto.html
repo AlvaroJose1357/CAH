@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/estilosOferta.css' %}">
+<title>Registrar Producto</title>
+{% endblock %}
+
+<!-- Inicio body -->
+
+{% block content %}
+<main class="usuario oferta registrar-oferta">
+  <section class="oferta-img">
+    <img src="{% static 'img/producto.png' %}" alt="oferta">
+  </section>
+  <section class="oferta-form-container producto-form-container">
+    <form action="" class="oferta-form">
+      <div>
+        <h2>Registrar</h2>
+        <h3>Producto</h3>
+      </div>
+      <input type="text" placeholder="Nombre Producto">
+      <input type="text" placeholder="Descripcion">
+      <input type="text" placeholder="Categoria">
+      <div>
+        <input class="button" type="submit" value="REGISTRAR">
+        <button class="button">CANCELAR</button>
+      </div>
+    </form>
+  </section>
+  {% endblock %}

@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/estilosOferta.css' %}">
+<title>Registrar Bodega</title>
+{% endblock %}
+
+<!-- Inicio body -->
+
+{% block content %}
+<main class="oferta registrar-usuario">
+  <section class="oferta-img">
+    <img src="{% static 'img/bodega.png' %}" alt="oferta">
+  </section>
+  <section class="oferta-form-container user-form-container">
+    <form action="" class="oferta-form">
+      <div>
+        <h2>Registrar</h2>
+        <h3>Bodega</h3>
+      </div>
+      <input type="text" placeholder="Número de cédula">
+      <input type="text" placeholder="Primer nombre">
+      <input type="text" placeholder="Segundo nombre">
+      <input type="text" placeholder="Primer apellido">
+      <input type="text" placeholder="Segundo apellido">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Contraseña">
+      <input type="text" placeholder="Dirección">
+      <input type="number" placeholder="Telefono">
+      <div>
+        <input class="button" type="submit" value="REGISTRAR">
+        <button class="button">CANCELAR</button>
+      </div>
+    </form>
+  </section>
+  {% endblock %}
