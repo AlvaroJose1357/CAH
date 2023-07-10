@@ -1,3 +1,4 @@
+
 from django.db import models
 
 # Create your models here.
@@ -109,5 +110,3 @@ class CarritoOferta(models.Model):
     
     def __str__(self):
         return self.id_carrito.idMayorita.idUsuario.nombre1 + " - " + self.id_oferta.id_producto.nombre1  
-
-

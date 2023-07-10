@@ -1,15 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
 # Create your views here.
 
-def hello(request):
-    return HttpResponse("hello world")
 
-def ejemnplorer(request):
-    return render(request, "ejemplo.html")
-def index(request):
-    return render(request,"Frontend/Inicio/index.html")
 
 '''def vehiculo(request):
     return render(request,"Frontend/Vehiculo/vehiculo.html")
@@ -25,3 +17,24 @@ def oferta(request):
     return render(request,"")
 def mayorista(request):
     return render(request,"")'''
+
+def inicio(request):
+  return render(request, 'Inicio/index.html')
+
+def oferta(request):
+  return render(request, 'Oferta/oferta.html')
+
+def registrarOferta(request):
+  return render(request, 'Oferta/registrar-oferta.html')
+
+def modificarOferta(request):
+  return render(request, 'Oferta/modificar-oferta.html')
+
+def vehiculo(request):
+  return render(request, 'Vehiculo/vehiculo.html')
+
+def registrarVehiculo(request):
+  return render(request, 'Vehiculo/registrar-vehiculo.html')
+
+def modificarVehiculo(request):
+  return render(request, 'Vehiculo/modificar-vehiculo.html')

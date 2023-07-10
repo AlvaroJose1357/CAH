@@ -1,11 +1,19 @@
-export function Nav() {
-  const $nav = document.createElement("nav");
-  $nav.innerHTML = `
-    <img src="../assets/img/logo.png" alt="logo">
-      <section class="nav-items">
-        <a href="#">Inicio</a>
-        <a href="#"><img src="../assets/img/user.png" alt=""></a>
-        <div class="container-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilosCarritoCompra.css">
+    <title>Carrito</title>
+</head>
+        
+    <body>
+        
+        <div class="header">
+            <div class="tilines">
+                <span>Tilines</span>
+            </div>
+            <div class="container-icon">
 				<div class="container-cart-icon">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -56,18 +64,7 @@ export function Nav() {
 				</div>
 			
             </div>
-        <a href="#"><img src="../assets/img/menu.png" alt=""></a>
-      </section>
-  `;
-
-  const $cartLink = $nav.querySelector('.container-cart-icon');
-  $cartLink.addEventListener("click", () => {
-    // Código a ejecutar al hacer clic en el enlace del carrito
-    import("../Components/index.js").then((module) => {
-      // Realiza las acciones necesarias con el módulo importado
-      module.doSomething();
-    });
-  });
-
-  return $nav;
-}
+        </div>
+        <script src="../Components/index.js"></script>
+</body>
+</html>
