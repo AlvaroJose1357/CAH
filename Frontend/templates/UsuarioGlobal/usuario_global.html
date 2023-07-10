@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Opciones Usuario</title>
+<link rel="stylesheet" href="{% static 'styles/estilosLogin.css' %}">
+{% endblock %}
+
+<!-- Inicio body -->
+
+{% block content %}
+<main class="usuario-global">
+  <article>
+    <a href="/login">INICIAR SESION</a>
+    <a href="/registrarse">REGISTRARSE</a>
+  </article>
+
+  {% endblock %}
