@@ -21,8 +21,16 @@ def mayorista(request):
 def inicio(request):
   return render(request, 'Inicio/index.html')
 
+
+
+def OpcionesUsuario(request):
+  return render(request, 'UsuarioGlobal/usuario_global.html')
+
 def login(request):
-  return render(request,'login/login.html')
+  return render(request, 'login/login.html')
+
+def registrarse(request):
+  return render(request, 'login/registrarse.html')
 
 def oferta(request):
   return render(request, 'Oferta/oferta.html')

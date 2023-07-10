@@ -1,131 +1,256 @@
-/** Registrar vehiculo ---------------*/
 
-.login {
-    position: relative;
-    justify-self: center;
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    height: 44rem;
-    margin-bottom: 5rem;
-    top: 11rem;
-  }
+/**Usuario global ------------------------  */
+.usuario-global {
+  position: relative;
+  top: 2rem;
+  height: 52rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .login-img {
-    position: relative;
-    border-radius: 3px;
-    max-width: 32rem;
-    min-width: 5rem;
-  }
-  
-  .login-img img {
-    border-radius: 5px;
-    width: 100%;
-    object-fit: cover;
-    object-position: right;
-  }
-  
-  .login-img::after {
-    position: absolute;
-    content: "";
-    width: 10rem;
-    height: 10rem;
-    border: 3px solid white;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    transform: translate(-60%, -50%);
-    background-color: var(--c4);
-  }
-  
-  .login-form-container {
-    position: relative;
-    top: 1rem;
-    left: -5rem;
-    min-width: 23rem;
-  }
-  
-  .login-form::before {
-    position: absolute;
-    content: "";
-    width: 150%;
-    height: 50%;
-    background-color: var(--c1);
-    bottom: -8%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-  
-  .login-form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    row-gap: 0.5rem;
-    background-color: white;
-    border: thin solid var(--c4);
-    border-radius: 3px;
-  }
-  
-  
-  .login-form div {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    align-items: center;
-  }
-  
-  .login-form div:nth-of-type(2) {
-    justify-content: center;
-    column-gap: 2rem;
-  }
-  
-  .login-form h3 {
-    font-size: 0.7rem;
-  }
-  
-  .login-form input[type="text"]:focus {
-    outline: 3px solid var(--c1);
-  }
+.usuario-global article {
+  position: relative;
+  width: min(50rem, 85%);
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+  background-color: var(--c3);
+  border-radius: 3px;
+}
 
-  .login-form input[type="radio"]{
-    display: none;
-  }
-  .login-form .radio label {
-    
-    background: rgba(61, 131, 97, .1);
-    padding: 5px 15px;
-    display: inline-block;
-    border-radius: 3px;
-    cursor: pointer;
+.usuario-global article::after {
+  position: absolute;
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-60%, -50%);
+  background-color: var(--c4);
+}
 
-  }
-  .login-form .radio label:hover {
-    background: rgba(116, 159, 129,0.9);
-    color: aliceblue;
-  }
+.usuario-global article::before {
+  position: absolute;
+  content: "";
+  width: 88%;
+  height: 70%;
+  background-color: var(--c1);
+  top: 50%;
+  left: 30%;
+  /* transform: translateX(-50%); */
+  z-index: -1;
+}
 
+.usuario-global a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: thin solid black;
+  border-radius: 3px;
+  transition: box-shadow 1.5s ease-in-out;
+}
 
-  .button,
-  .login-form input {
-    height: 2.5rem;
-    padding: 1rem;
-    border-radius: 3px;
-    background-color: #eadcdc;
-  }
-  .login-form input[type="submit"],
-  .button {
-    padding: 0.5rem;
-    font-weight: 400;
-  }
-  
-  .login-form input[type="submit"]:hover,
-  .button:hover {
-    cursor: pointer;
-    background-color: var(--c1);
-  }
+.usuario-global a:hover {
+  box-shadow: inset 30rem 0 var(--c1);
+}
 
+/** Registrarse ------------------------  */
+.registrarse {
+  position: relative;
+  justify-self: center;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  height: 47rem;
+  margin-left: -15rem;
+  margin-bottom: 5rem;
+}
 
-  
+.registrar-oferta {
+  top: 11rem;
+}
+
+.oferta-img {
+  position: relative;
+  border-radius: 3px;
+  max-width: 32rem;
+  min-width: 5rem;
+  height: fit-content;
+}
+
+.oferta-img img {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.oferta-img::after {
+  position: absolute;
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-60%, -50%);
+  background-color: var(--c4);
+}
+
+.content {
+  position: absolute;
+  bottom: 30%;
+  right: -20rem;
+  background-color: white;
+  border: thin solid var(--c1);
+  text-align: center;
+  width: min-content;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.content h2 {
+  margin-bottom: 3rem;
+}
+
+.content::before {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 100%;
+  background-color: var(--c1);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.opciones div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #eadcdc;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--c1);
+}
+
+/** login  --------------------------------------------------*/
+
+.oferta {
+  position: relative;
+  justify-self: center;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  height: 52rem;
+  margin-bottom: 5rem;
+}
+
+.oferta-form-container {
+  position: relative;
+  top: 20%;
+  left: -5rem;
+  height: fit-content;
+  min-width: 23rem;
+}
+
+.oferta-form::before {
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 50%;
+  background-color: var(--c1);
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.oferta-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  row-gap: 2rem;
+  background-color: white;
+  border: thin solid var(--c4);
+  border-radius: 3px;
+}
+
+.oferta-form div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.oferta-form div:nth-of-type(2) {
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.oferta-form h3 {
+  font-size: 0.7rem;
+}
+
+.oferta-form input[type="text"]:focus {
+  outline: 3px solid var(--c1);
+}
+
+.button,
+.oferta-form input {
+  height: 2.5rem;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #eadcdc;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.oferta-form input[type="submit"] {
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+.oferta-form input[type="submit"]:hover,
+.button:hover {
+  cursor: pointer;
+  background-color: var(--c1);
+}
