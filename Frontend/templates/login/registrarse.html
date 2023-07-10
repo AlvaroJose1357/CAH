@@ -1,0 +1,45 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/estilosLogin.css' %}">
+<title>Registrar Oferta</title>
+{% endblock %}
+
+<!-- Inicio body -->
+
+{% block content %}
+<main class="registrarse registrar-oferta">
+  <section class="oferta-img">
+    <img src="{% static 'img/Opciones-usuario.png' %}" alt="oferta">
+    <section class="content">
+      <h2>Registrar</h2>
+      <div class="opciones">
+        <div>
+          <label for="">Agricultor</label>
+          <a href="/agricultor/registrar" class="button"></a>
+        </div>
+        <div>
+          <label for="">Mayorista</label>
+          <a href="/mayorista/registrar" class="button"></a>
+        </div>
+        <div>
+          <label for="">Conductor</label>
+          <a href="/conductor/registrar" class="button"></a>
+        </div>
+        <div>
+          <label for="">Bodega</label>
+          <a href="/bodega/registrar" class="button"></a>
+        </div>
+        <div>
+          <label for="">Producto</label>
+          <a href="/producto/registrar" class="button"></a>
+        </div>
+        <div>
+          <label for="">Vehiculo</label>
+          <a href="/vehiculo/registrar" class="button"></a>
+        </div>
+      </div>
+    </section>
+  </section>
+  {% endblock %}
