@@ -21,6 +21,9 @@ def mayorista(request):
 def inicio(request):
   return render(request, 'Inicio/index.html')
 
+def login(request):
+  return render(request,'login/login.html')
+
 def oferta(request):
   return render(request, 'Oferta/oferta.html')
 

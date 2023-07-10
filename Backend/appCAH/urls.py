@@ -10,4 +10,5 @@ urlpatterns =[
     path('vehiculo/',views.vehiculo),
     path('vehiculo/registrar',views.registrarVehiculo),
     path('vehiculo/modificar',views.modificarVehiculo),
+    path('login/',views.login),
 ]
