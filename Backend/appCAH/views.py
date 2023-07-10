@@ -9,11 +9,9 @@ def hello(request):
 def ejemnplorer(request):
     return render(request, "ejemplo.html")
 def index(request):
-    '''template = loader.get_template()
-    
-    
     return render(request,"Frontend/Inicio/index.html")
-def vehiculo(request):
+
+'''def vehiculo(request):
     return render(request,"Frontend/Vehiculo/vehiculo.html")
 def conductor(request):
     return render(request,"Frontend/Conductor/condu.html")
