@@ -1,11 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/estilosOferta.css' %}">
+<title>Modificar Agricultor</title>
+{% endblock %}
+
+
+{% block content %}
+<main class="oferta registrar-oferta">
+    <section class="oferta-img">
+        <img src="{% static 'img/Opciones-usuario.png' %}" alt="oferta">
+    </section>
+    <section class="oferta-form-container">
+        <form action="" class="oferta-form">
+            <div>
+            <h2>Conductor</h2>
+            <h3>Modificar</h3>
+        </div>
+        <input type="text" placeholder="Nombre 1">
+        <input type="text" placeholder="Nombre 2">
+        <input type="text" placeholder="Apellido 1">
+        <input type="text" placeholder="Apellido 2">
+        <input type="emai" placeholder="Email">
+        <input type="password" placeholder="Contrasena">
+        <input type="text" placeholder="Telefono">
+        <input type="text" placeholder="Perfil">
+        <div>
+            <input class="button" type="submit" value="MODIFICAR">
+            <button class="button">CANCELAR</button>
+        </div>
+        </form>
+    </section>
+  {% endblock %}
