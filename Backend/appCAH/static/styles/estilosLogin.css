@@ -1,7 +1,6 @@
 /**Usuario global ------------------------  */
 .usuario-global {
   position: relative;
-  top: 2rem;
   height: 52rem;
   display: flex;
   justify-content: center;
@@ -10,6 +9,7 @@
 
 .usuario-global article {
   position: relative;
+  top: 2rem;
   width: min(50rem, 85%);
   height: 60%;
   display: flex;
@@ -252,4 +252,10 @@
 .button:hover {
   cursor: pointer;
   background-color: var(--c1);
+}
+
+.existe {
+  margin: 0;
+  background-color: var(--c3);
+  text-align: center;
 }
