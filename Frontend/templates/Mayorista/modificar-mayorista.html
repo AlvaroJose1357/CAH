@@ -8,29 +8,29 @@
 
 
 {% block content %}
-<main class="oferta registrar-oferta">
-    <section class="oferta-img">
-        <img src="{% static 'img/Opciones-usuario.png' %}" alt="oferta">
-    </section>
-    <section class="oferta-form-container">
-        <form action="" class="oferta-form">
-            <div>
-            <h2>Mayorista</h2>
-            <h3>Modificar</h3>
-        </div>
-        <input type="text" placeholder="Nombre 1">
-        <input type="text" placeholder="Nombre 2">
-        <input type="text" placeholder="Apellido 1">
-        <input type="text" placeholder="Apellido 2">
-        <input type="emai" placeholder="Email">
-        <input type="password" placeholder="Contrasena">
-        <input type="text" placeholder="Nombre Empresa">
-        <input type="text" placeholder="Telefono">
-        <input type="text" placeholder="Perfil">
-        <div>
-            <input class="button" type="submit" value="MODIFICAR">
-            <button class="button">CANCELAR</button>
-        </div>
-        </form>
-    </section>
+<main class="oferta registrar-usuario">
+  <section class="oferta-img">
+    <img src="{% static 'img/Opciones-usuario.png' %}" alt="oferta">
+  </section>
+  <section class="oferta-form-container user-form-container">
+    <form action="" class="oferta-form">
+      <div>
+        <h2>Mayorista</h2>
+        <h3>Modificar</h3>
+      </div>
+      <input type="text" placeholder="Nombre 1">
+      <input type="text" placeholder="Nombre 2">
+      <input type="text" placeholder="Apellido 1">
+      <input type="text" placeholder="Apellido 2">
+      <input type="emai" placeholder="Email">
+      <input type="password" placeholder="Contrasena">
+      <input type="text" placeholder="Nombre Empresa">
+      <input type="text" placeholder="Telefono">
+      <input type="text" placeholder="Perfil">
+      <div>
+        <input class="button" type="submit" value="MODIFICAR">
+        <button class="button">CANCELAR</button>
+      </div>
+    </form>
+  </section>
   {% endblock %}

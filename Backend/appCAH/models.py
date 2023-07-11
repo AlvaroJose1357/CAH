@@ -11,6 +11,7 @@ class Perfil(models.Model):
         return self.nombre
 
 class Usuario(models.Model):
+    numero_cedula = models.CharField(max_length=11)  
     nombre1= models.CharField(max_length=100)
     nombre2= models.CharField(max_length=100)
     apellido1= models.CharField(max_length=100)
@@ -21,7 +22,7 @@ class Usuario(models.Model):
     perfil = models.ForeignKey(Perfil, on_delete=models.CASCADE)
     
     def __str__(self):
-        return self.nombre1 + " - " + self.apellido1 
+        return self.nombre1 + ' - ' + self.apellido1 + " - " + self.numero_cedula
 
 class Bodega(models.Model):
     tipo_bodega =models.CharField(max_length=200)

@@ -19,7 +19,11 @@
       <img src="{% static 'img/Logo.png' %}" alt="logo">
       <section class="nav-items">
         <a href="/">Inicio</a>
+        {% if rol %}
+        <a href="/{{rol}}"><img src="{% static 'img/user.png' %}" alt=""></a>
+        {% else %}
         <a href="/opciones-usuario"><img src="{% static 'img/user.png' %}" alt=""></a>
+        {% endif %}
         <div class="container-icon">
           <div class="container-cart-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -52,7 +56,10 @@
             <p class="cart-empty">El carrito está vacío</p>
           </div>
         </div>
-        <a href="#"><img src="{% static 'img/menu.png' %}" alt=""></a>
+        <a class="menu"><img src="{% static 'img/menu.png' %}" alt="" class="click-menu"></a>
+        {% if rol %}
+        <a href=""><img src="{% static 'img/cerrar-sesion.png' %}" alt="" class="cerrar-sesion"></a>
+        {% endif%}
       </section>
     </nav>
   </header>

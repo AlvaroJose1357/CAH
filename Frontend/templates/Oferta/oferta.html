@@ -20,7 +20,29 @@
       </a>
     </section>
     <section class="registros">
+      {%for oferta in ofertas%}
       <article class="registro">
+        <section>
+          <img src="{% static 'img/guayaba.png'%}" alt="">
+        </section>
+        <section class="datos">
+          <p>{{oferta.id}}</p>
+          <p>{{oferta.precio}}</p>
+          <p>{{oferta.cantidad}}</p>
+          <p>{{oferta.id_producto.nombre}}</p>
+          <p>Precio</p>
+          <div>
+            <a href="./modificar" class="button">
+              Modificar
+            </a>
+            <button class="button boton-eliminar-oferta">
+              Eliminar
+            </button>
+          </div>
+        </section>
+      </article>
+      {%endfor%}
+      <!-- <article class="registro">
         <section>
           <img src="{% static 'img/guayaba.png'%}" alt="">
         </section>
@@ -179,27 +201,7 @@
             </button>
           </div>
         </section>
-      </article>
-      <article class="registro">
-        <section>
-          <img src="{% static 'img/guayaba.png'%}" alt="">
-        </section>
-        <section class="datos">
-          <p>ID</p>
-          <p>Nombre</p>
-          <p>Calidad</p>
-          <p>Cantidad</p>
-          <p>Precio</p>
-          <div>
-            <a href="./modificar" class="button">
-              Modificar
-            </a>
-            <button class="button boton-eliminar-oferta">
-              Eliminar
-            </button>
-          </div>
-        </section>
-      </article>
+      </article> -->
     </section>
   </article>
   {% endblock %}
