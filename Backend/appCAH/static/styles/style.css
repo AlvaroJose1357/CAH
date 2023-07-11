@@ -78,6 +78,7 @@ nav {
   width: 98%;
   height: 100%;
   padding: 0.2rem;
+  padding-right: 1rem;
   display: grid;
   grid-template-columns: 7rem 1fr;
   grid-template-rows: 100%;
@@ -112,6 +113,7 @@ nav {
 
 .nav-items > * {
   position: relative;
+  z-index: 5;
 }
 
 .nav-items > *::after {
@@ -277,4 +279,35 @@ nav {
   display: none;
 }
 
-/** Usuario Global -------------------------------------- */
+/** Menu -------------------------------------- */
+a {
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+}
+
+.active {
+  position: relative;
+}
+
+.menu-despegable {
+  position: absolute;
+  top: 165%;
+  background-color: white;
+  border: thin solid var(--c4);
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-despegable a {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: thin solid var(--c2);
+}
+
+.menu-despegable a:hover {
+  background-color: var(--c1);
+}

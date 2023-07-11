@@ -16,7 +16,11 @@
 
 .registrar-usuario {
   top: 11rem;
-  height: 60rem;
+  height: 57rem;
+}
+
+.registrar-bodega {
+  height: 62rem;
 }
 
 .oferta-img {
@@ -54,12 +58,20 @@
   min-width: 23rem;
 }
 
+.ofer-form-container {
+  top: 7rem;
+}
+
 .user-form-container {
   top: -5rem;
 }
 
 .producto-form-container {
   top: 7rem;
+}
+
+.bodega-form-container {
+  top: -7rem;
 }
 
 .oferta-form::before {
@@ -102,10 +114,12 @@
   font-size: 0.7rem;
 }
 
+select:focus,
 .oferta-form input[type="text"]:focus {
   outline: 3px solid var(--c1);
 }
 
+select,
 .button,
 .oferta-form input {
   height: 2.5rem;
@@ -121,11 +135,13 @@
   width: 50%;
 }
 
+select,
 .oferta-form input[type="submit"] {
   padding: 0.5rem;
   font-weight: 400;
 }
 
+select:hover,
 .oferta-form input[type="submit"]:hover,
 .button:hover {
   cursor: pointer;
@@ -245,4 +261,10 @@
 .modal div {
   display: flex;
   column-gap: 2rem;
+}
+
+.existe {
+  margin: 0;
+  background-color: var(--c3);
+  text-align: center;
 }

@@ -14,13 +14,15 @@
     <img src="{% static 'img/Opciones-usuario.png' %}" alt="oferta">
   </section>
   <section class="oferta-form-container">
-    <form action="" class="oferta-form">
+    <form action="" class="oferta-form" method="POST">
+      {% csrf_token %}
       <div>
         <h2>BIENVENIDOS</h2>
       </div>
-      <input type="email" placeholder="Nombre Producto">
-      <input type="text" placeholder="E-mail">
-      <input type="password" placeholder="Contraseña">
+      {% if usuario %}
+      <p class="existe">{{usuario}}</p>
+      {% endif %}
+      {{form}}
       <div>
         <input class="button" type="submit" value="INGRESAR">
         <button class="button">CANCELAR</button>

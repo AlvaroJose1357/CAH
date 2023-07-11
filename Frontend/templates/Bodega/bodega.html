@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/styles/normalize.css">
-  <link rel="stylesheet" href="../assets/styles/style.css">
-</head>
-<body>
-    <header class="header">
-    </header>
-    <main>
-      <!-- Aqui ingresa tus etiquetas -->
-      <p>Ejemplo</p>
-    </main>
-    <footer class="footer">
-    </footer>
-    <script src="../index.js" type="module"></script>
-</body>
-</html>
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Bodega</title>
+<link rel="stylesheet" href="{% static 'styles/estilosLogin.css' %}">
+{% endblock %}
+
+<!-- Inicio body -->
+
+{% block content %}
+<main class="usuario-global">
+  <article>
+    <a href="./modificar">MODIFICAR PERFIL</a>
+  </article>
+
+  {% endblock %}
