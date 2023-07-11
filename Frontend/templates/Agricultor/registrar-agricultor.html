@@ -14,20 +14,17 @@
     <img src="{% static 'img/Opciones-usuario.png' %}" alt="oferta">
   </section>
   <section class="oferta-form-container user-form-container">
-    <form action="" class="oferta-form">
+    <form action="" class="oferta-form" method="POST">
+      {% csrf_token %}
       <div>
         <h2>Registrar</h2>
         <h3>Agricultor</h3>
       </div>
-      <input type="text" placeholder="Número de cédula">
-      <input type="text" placeholder="Primer nombre">
-      <input type="text" placeholder="Segundo nombre">
-      <input type="text" placeholder="Primer apellido">
-      <input type="text" placeholder="Segundo apellido">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Contraseña">
-      <input type="text" placeholder="Dirección">
-      <input type="number" placeholder="Telefono">
+      {% if usuario %}
+      <p class="existe">{{usuario}}</p>
+      {% endif %}
+      {{form}}
+
       <div>
         <input class="button" type="submit" value="REGISTRAR">
         <button class="button">CANCELAR</button>
